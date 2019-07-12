@@ -16,7 +16,7 @@ const game = () => {
     };
     // play Match
     const playMatch = () => {
-        const options = document.querySelectorAll(".option button");
+        const options = document.querySelectorAll(".options button");
         const playerHand = document.querySelector(".player-hand");
         const computerHand = document.querySelector(".computer-hand");
         // Computer Options
@@ -32,7 +32,7 @@ const game = () => {
 
                 // Update Images
                 playerHand.src = `./assets/${this.textContent}.png`;
-                compareHands = `./assets/${computerChoice}.png`;
+                computerHand.src = `./assets/${computerChoice}.png`;
 
             });
         });
